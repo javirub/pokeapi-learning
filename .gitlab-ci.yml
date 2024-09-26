@@ -1,0 +1,10 @@
+stages:
+  - test
+
+test:
+  stage: test
+  image: openjdk:17  # Usa la imagen de Java que necesites
+  script:
+    - ./mvn test 
+  only:
+    - branches  # Solo ejecuta en ramas, no en tags
