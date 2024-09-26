@@ -3,14 +3,14 @@ package com.laberit.sina.bootcamp.extra.models;
 public class Pokemon {
     private int id;
     private String name;
-    private int baseExperience;
+    private int base_experience;
     private int height;
     private int weight;
 
-    public Pokemon(int id, String name, int baseExperience, int height, int weight) {
+    public Pokemon(int id, String name, int base_experience, int height, int weight) {
         this.id = id;
         this.name = name;
-        this.baseExperience = baseExperience;
+        this.base_experience = base_experience;
         this.height = height;
         this.weight = weight;
     }
@@ -23,7 +23,7 @@ public class Pokemon {
         return "Pokemon{" +
                 "id=" + id +
                 ", name='" + name + '\'' +
-                ", baseExperience=" + baseExperience +
+                ", base_experience=" + base_experience +
                 ", height=" + height +
                 ", weight=" + weight +
                 '}';
@@ -45,12 +45,12 @@ public class Pokemon {
         this.name = name;
     }
 
-    public int getBaseExperience() {
-        return baseExperience;
+    public int getBase_experience() {
+        return base_experience;
     }
 
-    public void setBaseExperience(int baseExperience) {
-        this.baseExperience = baseExperience;
+    public void setBase_experience(int base_experience) {
+        this.base_experience = base_experience;
     }
 
     public int getHeight() {
