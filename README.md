@@ -23,3 +23,11 @@ Puedes crear si quieres en la raíz del proyecto una clase Main con un método m
 clases conforme las vas desarrollando, pero cuando termines este proyecto no debe de tener clase Main. 
 Es solo un API Java, y se usará a modo de librería.
 Cuando lo hayas terminado, usa Maven para generar el jar de la librería e instálalo en tu repositorio local.
+
+## Extra
+### TESTS
+Se añaden tests para comprobar el funcionamiento correcto
+### Implementación gitlab CI/CD
+Se añade un pipeline para comprobar que los tests pasan correctamente.  
+Se configura un runner en local para ejecutar el pipeline.  
+Se mergean automaticamente los merge request que pasan el pipeline.
