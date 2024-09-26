@@ -9,10 +9,10 @@ import org.apache.hc.client5.http.impl.classic.CloseableHttpClient;
 import org.apache.hc.client5.http.impl.classic.CloseableHttpResponse;
 import org.apache.hc.client5.http.impl.classic.HttpClients;
 
-public class PokeApiClient {
-    private static final String BASE_URL = "https://pokeapi.co/api/v2/";
-    private static final int POKEMON_LIMIT = 1302;
+import static com.laberit.sina.bootcamp.extra.configs.configs.BASE_URL;
+import static com.laberit.sina.bootcamp.extra.configs.configs.POKEMON_LIMIT;
 
+public class PokeApiClient {
     public static PokemonNamesResponse getAllPokemons() {
         try (CloseableHttpClient httpClient = HttpClients.createDefault()) {
             String url = BASE_URL + "pokemon?limit=" + POKEMON_LIMIT;

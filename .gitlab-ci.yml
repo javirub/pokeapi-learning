@@ -3,8 +3,8 @@ stages:
 
 test:
   stage: test
-  image: openjdk:17  # Usa la imagen de Java que necesites
+  image: maven:3.8.4-openjdk-17  # Usa la imagen de Maven con OpenJDK 17
   script:
-    - ./mvn test 
+    - mvn test  # Ejecuta los tests
   only:
     - branches  # Solo ejecuta en ramas, no en tags

@@ -6,9 +6,10 @@ import com.laberit.sina.bootcamp.extra.services.PokemonServiceImpl;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertNull;
 
 public class PokemonServiceImplTest {
-
+    // GetPokemon(String) tests
     @Test
     public void testGetPokemonByName() {
         // Arrange
@@ -26,6 +27,13 @@ public class PokemonServiceImplTest {
     }
 
     @Test
+    public void testGetPokemonByNameNotFound() {
+        PokemonService pokemonService = new PokemonServiceImpl();
+        Pokemon notFound = pokemonService.getPokemon("ningunpokemone");
+        assertNull(notFound);
+    }
+    // GetPokemon(int) tests
+    @Test
     public void testGetPokemonById() {
         // Arrange
         PokemonService pokemonService = new PokemonServiceImpl();
@@ -39,5 +47,12 @@ public class PokemonServiceImplTest {
         assertEquals(267, charizard.getBase_experience());
         assertEquals(17, charizard.getHeight());
         assertEquals(905, charizard.getWeight());
+    }
+
+    @Test
+    public void testGetPokemonByIdNotFound() {
+        PokemonService pokemonService = new PokemonServiceImpl();
+        Pokemon notFound = pokemonService.getPokemon(0);
+        assertNull(notFound);
     }
 }
