@@ -1,7 +1,7 @@
 package com.laberit.sina.bootcamp.extra.services;
 
 import com.laberit.sina.bootcamp.extra.api.PokeApiClient;
-import com.laberit.sina.bootcamp.extra.models.Pokemon;
+import com.laberit.sina.bootcamp.extra.models.pokemon.Pokemon;
 
 public class PokemonServiceImpl implements PokemonService {
 

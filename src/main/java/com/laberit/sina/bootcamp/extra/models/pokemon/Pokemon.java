@@ -1,4 +1,6 @@
-package com.laberit.sina.bootcamp.extra.models;
+package com.laberit.sina.bootcamp.extra.models.pokemon;
+
+import java.util.ArrayList;
 
 public class Pokemon {
     private int id;
@@ -6,17 +8,8 @@ public class Pokemon {
     private int base_experience;
     private int height;
     private int weight;
-
-    public Pokemon(int id, String name, int base_experience, int height, int weight) {
-        this.id = id;
-        this.name = name;
-        this.base_experience = base_experience;
-        this.height = height;
-        this.weight = weight;
-    }
-
-    public Pokemon() {
-    }
+    private ArrayList<Ability> abilities;
+    private Sprite sprites;
 
     @Override
     public String toString() {
@@ -26,7 +19,28 @@ public class Pokemon {
                 ", base_experience=" + base_experience +
                 ", height=" + height +
                 ", weight=" + weight +
+                ", abilities=" + abilities +
+                ", sprites=" + sprites +
                 '}';
+    }
+
+    public Sprite getSprites() {
+        return sprites;
+    }
+
+    public void setSprites(Sprite sprites) {
+        this.sprites = sprites;
+    }
+
+    public ArrayList<Ability> getAbilities() {
+        return abilities;
+    }
+
+    public void setAbilities(ArrayList<Ability> abilities) {
+        this.abilities = abilities;
+    }
+
+    public Pokemon() {
     }
 
     public int getId() {
