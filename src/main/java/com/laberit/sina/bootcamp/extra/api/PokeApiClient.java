@@ -1,8 +1,8 @@
 package com.laberit.sina.bootcamp.extra.api;
 
 
-import com.laberit.sina.bootcamp.extra.models.Pokemon;
 import com.laberit.sina.bootcamp.extra.models.PokemonNamesResponse;
+import com.laberit.sina.bootcamp.extra.models.pokemon.Pokemon;
 import com.laberit.sina.bootcamp.extra.utils.JSONParser;
 import org.apache.hc.client5.http.classic.methods.HttpGet;
 import org.apache.hc.client5.http.impl.classic.CloseableHttpClient;

@@ -1,6 +1,6 @@
 package com.laberit.sina.bootcamp.extra;
 
-import com.laberit.sina.bootcamp.extra.models.Pokemon;
+import com.laberit.sina.bootcamp.extra.models.pokemon.Pokemon;
 import com.laberit.sina.bootcamp.extra.services.PokemonService;
 import com.laberit.sina.bootcamp.extra.services.PokemonServiceImpl;
 import org.junit.jupiter.api.Test;
